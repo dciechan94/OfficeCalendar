@@ -1,0 +1,147 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="weekContainer" fx:controller="sample.Cont2" stylesheets="@Login.css" xmlns:fx="http://javafx.com/fxml">
+
+    <GridPane fx:id="monday">
+        <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+            <HBox styleClass="inCenter">
+                <Group>
+                    <Label fx:id="monLabel" styleClass="vertical"/>
+                </Group>
+            </HBox>
+        </StackPane>
+
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="inCenter,borderr" style="-fx-font-size: 47"/>
+
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="2" text="Spotkanie inżynierskie" styleClass="borderr"/>
+    </GridPane>
+
+
+    <GridPane fx:id="tuesday">
+        <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+            <HBox style="-fx-padding: 4 0 4 0" maxWidth="Infinity" maxHeight="Infinity"
+                  alignment="CENTER">
+                <Group>
+                    <Label fx:id="tueLabel" text="Wtorek" GridPane.columnIndex="0"
+                           styleClass="vertical"
+                           GridPane.rowIndex="0"/>
+                </Group>
+            </HBox>
+        </StackPane>
+
+        <Label text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="borderr"
+               style="-fx-font-size: 47"
+               maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER"/>
+
+        <TextField text="Spotkanie inżynierskie" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                   styleClass="borderr" maxWidth="Infinity" maxHeight="Infinity"/>
+
+    </GridPane>
+
+
+    <GridPane fx:id="wednesday">
+        <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+            <HBox style="-fx-padding: 4 0 4 0" maxWidth="Infinity" maxHeight="Infinity"
+                  alignment="CENTER">
+                <Group>
+                    <Label fx:id="wedLabel" text="" GridPane.columnIndex="0"
+                           styleClass="vertical"
+                           GridPane.rowIndex="0"/>
+                </Group>
+            </HBox>
+        </StackPane>
+
+        <Label text="3" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="borderr"
+               style="-fx-font-size: 47"
+               maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER"/>
+
+        <TextField text="Spotkanie inżynierskie" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                   styleClass="borderr" maxWidth="Infinity" maxHeight="Infinity"/>
+    </GridPane>
+
+
+    <GridPane fx:id="thursday">
+        <children>
+            <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+                <HBox style="-fx-padding: 4 0 4 0" maxWidth="Infinity" maxHeight="Infinity"
+                      alignment="CENTER">
+                    <Group>
+                        <Label fx:id="thuLabel" text="Czwartek" GridPane.columnIndex="0"
+                               styleClass="vertical"
+                               GridPane.rowIndex="0"/>
+                    </Group>
+                </HBox>
+            </StackPane>
+
+            <Label text="4" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="borderr"
+                   style="-fx-font-size: 47"
+                   maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER"/>
+
+            <TextField text="Spotkanie inżynierskie" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                       styleClass="borderr" maxWidth="Infinity" maxHeight="Infinity"/>
+        </children>
+    </GridPane>
+
+
+    <GridPane fx:id="friday">
+        <children>
+            <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+                <HBox style="-fx-padding: 4 0 4 0" maxWidth="Infinity" maxHeight="Infinity"
+                      alignment="CENTER">
+                    <Group>
+                        <Label fx:id="friLabel" text="Piątek" GridPane.columnIndex="0"
+                               styleClass="vertical"
+                               GridPane.rowIndex="0"/>
+                    </Group>
+                </HBox>
+            </StackPane>
+
+            <Label text="5" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="borderr"
+                   style="-fx-font-size: 47"
+                   maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER"/>
+
+            <TextField text="Spotkanie inżynierskie" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                       styleClass="borderr" maxWidth="Infinity" maxHeight="Infinity"/>
+        </children>
+    </GridPane>
+
+
+    <GridPane fx:id="saturday">
+        <children>
+            <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+                <HBox style="-fx-padding: 4 0 4 0" maxWidth="Infinity" maxHeight="Infinity"
+                      alignment="CENTER">
+                    <Group>
+                        <Label fx:id="satLabel" text="Sobota" GridPane.columnIndex="0"
+                               styleClass="vertical"
+                               GridPane.rowIndex="0"/>
+                    </Group>
+                </HBox>
+            </StackPane>
+
+            <Label text="6" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="borderr"
+                   style="-fx-font-size: 47"
+                   maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER"/>
+
+            <TextField text="Spotkanie inżynierskie" GridPane.rowIndex="0" GridPane.columnIndex="2"
+                       styleClass="borderr" maxWidth="Infinity" maxHeight="Infinity"/>
+        </children>
+    </GridPane>
+
+
+    <GridPane fx:id="sunday">
+        <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="borderr">
+            <HBox styleClass="inCenter">
+                <Group>
+                    <Label fx:id="sunLabel" styleClass="vertical,dayHoliday"/>
+                </Group>
+            </HBox>
+        </StackPane>
+
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="inCenter,borderr,dayNo,dayHoliday"/>
+
+        <fx:include source="daySchedule.fxml" GridPane.columnIndex="2" GridPane.rowIndex="0" styleClass="border"/>
+    </GridPane>
+
+</VBox>

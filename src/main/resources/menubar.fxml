@@ -1,0 +1,40 @@
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<MenuBar fx:controller="sample.MenuBarController" xmlns:fx="http://javafx.com/fxml">
+    <menus>
+        <Menu mnemonicParsing="false" text="Plik">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Zamknij" />
+            </items>
+        </Menu>
+        <Menu text="Edycja">
+            <items>
+                <MenuItem text="Usuń quiz" />
+            </items>
+        </Menu>
+        <Menu text="Wstaw">
+            <items>
+                <MenuItem text="Przykładowy scenariusz" />
+                <Menu text="Scenę">
+                    <items>
+                        <MenuItem text="Z obrazkiem" />
+                        <MenuItem text="Z filmem" />
+                    </items>
+                </Menu>
+                <MenuItem text="Quiz" />
+                <Menu text="Dymek">
+                    <items>
+                        <MenuItem text="Dymek rozmowy" />
+                        <MenuItem text="Dymek myśli" />
+                    </items>
+                </Menu>
+            </items>
+        </Menu>
+        <Menu text="Pomoc">
+            <items>
+                <MenuItem text="O programie" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

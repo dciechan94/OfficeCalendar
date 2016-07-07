@@ -1,0 +1,31 @@
+.label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+
+}
+
+.dayHoliday {
+    -fx-text-fill: #ff0628;
+}
+
+.dayNo {
+    -fx-font-size: 47;
+}
+
+.vertical {
+    -fx-rotate: 270;
+}
+
+.borderr {
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+}
+
+.inCenter {
+    -fx-padding: 4 0 4 0;
+    -fx-alignment: center;
+}

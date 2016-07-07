@@ -1,0 +1,13 @@
+<?import javafx.scene.layout.VBox?>
+<VBox prefHeight="800" prefWidth="600" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+    <children>
+        <fx:include fx:id="menubar" source="menubar.fxml"/>
+
+        <fx:include fx:id="header" source="header.fxml"/>
+
+        <fx:include fx:id="week" source="week.fxml"/>
+
+    </children>
+
+</VBox>
